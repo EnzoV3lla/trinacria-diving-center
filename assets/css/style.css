@@ -1,0 +1,426 @@
+        /* COMMONS ROULES */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: var(--bg_primary);
+        }
+        
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        /* UTILITY */
+        
+         :root {
+            --bg_primary: white;
+            --bg_secondary: #46A4D7;
+            --bg_tertiary: #00122A;
+            --bg_footer: black;
+            --c_text_primary: black;
+            --c_text_secondary: white;
+            --special_color: #E49429;
+        }
+        
+        .bg_primary {
+            background-color: var(--bg_primary);
+        }
+        
+        .bg_secondary {
+            background-color: var(--bg_secondary);
+        }
+        
+        .bg_tertiary {
+            background-color: var(--bg_tertiary);
+        }
+        
+        .bg_footer {
+            background-color: var(--bg_footer);
+        }
+        
+        .c_text_secondary {
+            color: var(--c_text_secondary)
+        }
+        
+        .special_color {
+            color: var(--special_color);
+        }
+        
+        .w_100 {
+            width: 100%;
+        }
+        
+        .w_200 {
+            width: 200px;
+        }
+        
+        .w_500 {
+            width: 500px;
+        }
+        
+        .h_150 {
+            height: 150px;
+        }
+        
+        .h_250 {
+            height: 250px;
+        }
+        
+        .h_600 {
+            height: 600px;
+        }
+        
+        .h_v {
+            height: 200px;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+        
+        .mb_5 {
+            margin-bottom: 5rem;
+        }
+        
+        .mb_10 {
+            margin-bottom: 10rem;
+        }
+        
+        .mt_5 {
+            margin-top: 5rem;
+        }
+        
+        .mt_10 {
+            margin-top: 10rem;
+        }
+        
+        .px_special {
+            padding: 0px 22px;
+        }
+        /*************** PAGINA DI RIERIMENTO: HOME *************** /
+
+/* HEADER */
+        
+        .logo {
+            height: 100px;
+            padding: 10px;
+        }
+        /* MAIN */
+        /* hero image */
+        
+        .hero_image {
+            background-image: url("../../img/pexels-maël-balland-3098970.jpg");
+            background-size: cover;
+            height: 1000px;
+            background-repeat: no-repeat;
+        }
+        /* for_start */
+        
+        .rounded_1 {
+            border-radius: 1rem;
+        }
+        /* try */
+        
+        .card_badge {
+            padding: 10px;
+            width: calc(100% / 3);
+        }
+        
+        .card_badge {
+            transition: all 1s;
+        }
+        
+        .card_badge:hover {
+            width: 200px;
+        }
+        /* messina */
+        
+        .h_special {
+            height: 350px;
+        }
+        
+        #messina .row {
+            margin-left: -12px;
+        }
+        /* punti immersione */
+        
+        #punti_immersione .col:hover .card {
+            box-shadow: 0 9px 15px rgb(0 0 0 / 23%);
+        }
+        
+        .card {
+            width: 100%;
+        }
+        /* FOOTER */
+        
+        img [fill] {
+            fill: rgb(205, 53, 18)
+        }
+        
+        .special_class {
+            margin-left: -20px;
+            height: 100px;
+        }
+        /*************** PAGINA DI RIERIMENTO: CHI SIAMO *************** /
+
+/* MAIN */
+        
+        .chisiamo_image {
+            background-image: url("../../img/stafftrinacriadiving.jpeg");
+            background-size: cover;
+            height: 1000px;
+            background-repeat: no-repeat;
+        }
+        
+        .ms_m12 {
+            margin-left: -12px;
+        }
+        /*************** PAGINA DI RIERIMENTO: PUNTI DI IMMERSIONE *************** /
+/*************** PAGINA DI RIERIMENTO: GALLERIA ***************/
+        
+        .text_justify {
+            text-align: justify;
+        }
+        /*************** PAGINA DI RIERIMENTO: CORSI PER ADULTI *************** /
+/*************** PAGINA DI RIERIMENTO: CORSI PER BAMBINI *************** /
+/*************** PAGINA DI RIERIMENTO: CORSI INTRODUTTIVI *************** /
+
+/* MEDIA QUERY */
+        /* per tablet */
+        
+        @media screen and (max-width: 768px) {
+            .h_v {
+                height: 150px;
+            }
+            .logo {
+                height: 80px;
+                padding: 5px;
+            }
+            .hero_image {
+                height: 450px;
+            }
+            .cgs_title {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            .cgs_text {
+                font-size: 1rem;
+                text-align: justify;
+            }
+            .h_cgs {
+                height: 660px;
+            }
+            #certificate .col {
+                display: flex;
+                justify-content: center;
+            }
+            #certificate img {
+                height: 200px;
+            }
+            #try .container {
+                padding: 0.5rem 0.5rem !important;
+            }
+            #try {
+                margin-bottom: 2rem;
+            }
+            #messina {
+                margin-bottom: 0px;
+            }
+            #messina .container {
+                box-shadow: 0px 0px !important;
+            }
+            #messina .cambio {
+                margin-bottom: 2rem;
+            }
+            #messina .row {
+                padding-left: 0.75rem;
+            }
+            #messina .col {
+                padding-left: 1px !important;
+            }
+            #messina img {
+                height: 190px;
+                border-radius: 0.3rem;
+            }
+            #messina .cambio_p {
+                padding: 1.5rem !important;
+            }
+            #messina .cambio_t {
+                font-size: 0.8rem;
+            }
+            #info_diving {
+                margin-bottom: 1.5rem;
+            }
+            #diving h2 {
+                margin-bottom: 1.5rem;
+            }
+            .container_text {
+                width: 300px;
+                padding: 1.5rem 1.5rem !important;
+            }
+            #for_start .col {
+                margin-bottom: 2rem;
+            }
+            .card_badge {
+                padding: 10px;
+                width: calc(100% / 2.2);
+            }
+            .card_badge:hover {
+                width: 150px;
+            }
+            #info_diving {
+                height: 450px;
+            }
+            #info_diving .row {
+                height: 450px;
+            }
+            #info_diving .col {
+                justify-content: center;
+            }
+            .nascondimi {
+                display: none !important;
+            }
+            .special_class {
+                margin-left: -15px;
+                height: auto;
+                width: 400px;
+                margin-bottom: 20px;
+            }
+            #punti_immersione .col {
+                margin-left: 0px;
+            }
+            /* PAGINA: CHI SIAMO */
+            .chisiamo_image {
+                height: 500px;
+            }
+            #diving {
+                margin-top: 30px;
+            }
+            #diving .container {
+                margin-bottom: 20px;
+            }
+        }
+        /* per telefonini */
+        
+        @media screen and (max-width: 425px) {
+            .logo {
+                height: 60px;
+                padding: 5px;
+            }
+            .hero_image {
+                height: 300px;
+            }
+            .cgs_title {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .cgs_text {
+                font-size: 0.8rem;
+                text-align: justify;
+            }
+            .h_cgs {
+                height: 450px;
+            }
+            #try .container {
+                padding: 0.5rem 0.5rem !important;
+            }
+            #try {
+                margin-bottom: 2rem;
+            }
+            #messina {
+                margin-bottom: 0px;
+            }
+            #messina .container {
+                box-shadow: 0px 0px !important;
+            }
+            #messina .cambio {
+                margin-bottom: 2rem;
+            }
+            #messina .row {
+                padding-left: 0.75rem;
+            }
+            #messina .col {
+                padding-left: 1px !important;
+            }
+            #messina img {
+                height: 190px;
+                border-radius: 0.3rem;
+            }
+            #messina .cambio_p {
+                padding: 1.5rem !important;
+            }
+            #messina .cambio_t {
+                font-size: 0.8rem;
+            }
+            #info_diving {
+                margin-bottom: 1.5rem;
+            }
+            #diving h2 {
+                margin-bottom: 1.5rem;
+            }
+            .container_text {
+                width: 300px;
+                padding: 1.5rem 1.5rem !important;
+            }
+            #for_start .col {
+                margin-bottom: 2rem;
+            }
+            .card_badge {
+                padding: 10px;
+                width: calc(100% / 2.2);
+            }
+            .card_badge:hover {
+                width: 150px;
+            }
+            #info_diving {
+                height: 450px;
+            }
+            #info_diving .row {
+                height: 450px;
+            }
+            #info_diving .col {
+                justify-content: center;
+            }
+            .nascondimi {
+                display: none !important;
+            }
+            .special_class {
+                margin-left: -15px;
+                height: auto;
+                width: 400px;
+                margin-bottom: 20px;
+            }
+            #punti_immersione .col {
+                margin-left: 0px;
+            }
+            /* PAGINA: CHI SIAMO */
+            .chisiamo_image {
+                height: 500px;
+            }
+            #diving {
+                margin-top: 30px;
+            }
+            #diving .container {
+                margin-bottom: 20px;
+            }
+        }
